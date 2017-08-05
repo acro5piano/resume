@@ -9,12 +9,13 @@ module.exports = {
 
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   devServer: {
     contentBase: 'dist',
-    port: 3000
+    port: 3000,
+    hot: true
   },
 
   resolve: {
@@ -36,7 +37,12 @@ module.exports = {
         loader: 'pug-loader'
       },
       {
-        test: /\.postcss$/,
+        test: /\.jpg$/,
+        exclude: /node_modules/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.css$/,
         exclude: /node_modules/,
         use: [
           {

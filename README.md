@@ -9,9 +9,12 @@ yarn install
 yarn watch
 ```
 
-write your resume. `src/app.postcss` is for css, `src/index.pug` is for template.
+open localhost:3000 and you can see your first resume.
+
+Write your resume. `src/app.postcss` is for css, `src/index.pug` is for template.
 
 # Configuration
 
-write your Webpack config. if you want to write your resume with sass, just add `sass-loader`
+Write your Webpack config.
+If you want to write your resume with sass, just add `sass-loader`
 
