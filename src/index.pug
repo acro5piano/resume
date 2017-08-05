@@ -7,23 +7,67 @@ html(lang='en')
     link(href="https://fonts.googleapis.com/css?family=Raleway", rel="stylesheet")
 
   body
-    .container.resume
-      .row
-        .three.columns
-          .logo
-        .nine.columns
-          h1.my-name Kay Gosho
-          p Fullstack web engineer
-          p
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
-            | aaaaaaaaaa
+    .resume-container
+      .eyecatch.u-doc-container
+        .row
+          .three.columns
+            .eyecatch-logo
+          .nine.columns
+            h1.eyecatch-title Kay Gosho
+            p.eyecatch-subtitle Fullstack web engineer
+            p.eyecatch-description
+              | I scale our web application (https://www.in-fra.jp) as a lead web engineer. The application was a little bit legacy in point of both infrastructure and application. I changed the infrastructure from Heroku to AWS, replaced jQuery with Vue.js, and tuned SQL. It speeds up application for 2000ms and improve maintainability of the application.
+              | I also improve business KPI. We set OKR and each engineer create functions and architecture for achieving the OKR.
+
+      .contact
+        .row
+          .three.columns
+            .contact-each
+              p.contact-content 0000000000
+              p.contact-heading phone number
+          .three.columns
+            .contact-each
+              p.contact-content 0000000000
+              p.contact-heading phone number
+          .three.columns
+            .contact-each
+              p.contact-content 0000000000
+              p.contact-heading phone number
+          .three.columns
+            .contact-each-last
+              p.contact-content 0000000000
+              p.contact-heading phone number
+
+      .row.u-doc-container
+        .six.columns
+          h2.u-section-title Work Exprience
+          .work-each
+            p.u-each-title
+              span.u-organization-name Traimmu.inc
+              span.u-each-period 201703 ~ Current
+            p.u-each-subtitle Lead engineer
+            p.work-each-description
+              ul
+                li Heroku to AWS
+                li Heroku to AWS
+          .work-each
+            p.work-each-position Lead engineer
+            p.work-each-title Traimmu.inc
+            p.work-each-period Current
+            p.work-each-description
+              | aaaaaaaaaaaaaaaaa
+              | aaaaaaaaaaaaaaaaa
+              | aaaaaaaaaaaaaaaaa
+        .six.columns
+          h2.u-section-title Education
+          .education-each
+            p.education-each-position Lead engineer
+            p.education-each-title Traimmu.inc
+          h2.u-section-title Programming Skill
+          .programming-skill
+            p.education-each-position Lead engineer
+            p.education-each-title Traimmu.inc
+
+
 
     script(src='/bundle.js')
