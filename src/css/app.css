@@ -19,6 +19,7 @@ body {
   @media print {
     margin: 0;
   }
+  border-bottom: solid 20px $info;
 }
 
 .eyecatch-title {
@@ -36,6 +37,7 @@ body {
   background: url('../images/profile.jpg');
   width: 120px;
   height: 150px;
+  margin-top: 25px;
 }
 
 .contact {
@@ -66,22 +68,41 @@ body {
   font-weight: bold;
 }
 
+.work-each {
+  margin-bottom: 30px;
+}
+
+.oss-title {
+  font-weight: bold;
+}
+
+.oss-url {
+  margin-left: 10px;
+}
+
+.education {
+  margin-bottom: 40px;
+}
+
 .u-section-title {
   font-size: $xlarge;
   color: $info;
   letter-spacing: 0.3px;
+  margin-bottom: 20px;
 }
 
-.u-each-title {
+.u-each-organization {
   font-weight: bold;
 }
 
 .u-each-subtitle {
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .u-each-period {
-  font-weight: bold;
+  margin-left: 6%;
+  padding-left: 6%;
+  border-left: solid 1px #ccc;
 }
 
 .u-doc-container {
