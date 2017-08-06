@@ -1,11 +1,11 @@
 body {
-  font-family: 'Raleway', 'Khula', sans-serif;
+  font-family: "Khula", Arial, sans-serif;
+
   background: #eee;
   @media print {
     background: #fff;
   }
   font-size: 13px;
-  /* letter-spacing: 0.5px; */
   & * {
     margin-bottom: 0.5px;
   }
@@ -29,7 +29,7 @@ body {
 
 .eyecatch-subtitle {
   color: $info;
-  font-size: $large;
+  font-size: $xlarge;
 }
 
 .eyecatch-logo {
@@ -45,20 +45,29 @@ body {
   text-align: center;
 }
 
-.contact-each {
+.contact-each-first,
+.contact-each-second {
   border-right: solid 1px #888;
-}
-.contact-each-last {
-  border-right: unset;
+  margin-left: 0;
+  width: 23% !important;
 }
 
+.contact-each-third {
+  border-right: solid 1px #888;
+  margin-left: 1%;
+  width: 28% !important;
+}
+.contact-each-last {
+  margin-left: 2%;
+  width: 20% !important;
+}
 .contact-content {
   font-size: $large;
   font-weight: bold;
 }
 
 .u-section-title {
-  font-size: $large;
+  font-size: $xlarge;
   color: $info;
   letter-spacing: 0.3px;
 }
