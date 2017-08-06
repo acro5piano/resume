@@ -91,6 +91,10 @@ body {
   margin-bottom: 20px;
 }
 
+.u-each-title {
+  margin-bottom: 5px;
+}
+
 .u-each-organization {
   font-weight: bold;
 }
