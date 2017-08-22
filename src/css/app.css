@@ -62,11 +62,11 @@ li {
 .contact-each-third {
   border-right: solid 1px #888;
   margin-left: 1%;
-  width: 28% !important;
+  width: 32% !important;
 }
 .contact-each-last {
-  margin-left: 2%;
-  width: 20% !important;
+  margin-left: 3%;
+  width: 16% !important;
 }
 .contact-content {
   font-size: $large;
