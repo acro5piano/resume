@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --hot",
     "watch": "webpack-dev-server --hot"
   },
   "keywords": [],

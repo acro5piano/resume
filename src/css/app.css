@@ -11,6 +11,11 @@ body {
   }
 }
 
+li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
 .resume-container {
   background: #fff;
   width: 800px;
@@ -19,13 +24,13 @@ body {
   @media print {
     margin: 0;
   }
-  border-bottom: solid 20px $info;
+  /* border-bottom: solid 20px $info; */
 }
 
 .eyecatch-title {
   color: #555;
   font-size: 30px;
-  margin: 20px 0 0 0;
+  margin: 12px 0 0 0;
 }
 
 .eyecatch-subtitle {
@@ -78,6 +83,10 @@ body {
 
 .oss-url {
   margin-left: 10px;
+}
+
+.oss-description {
+  margin-left: 24px;
 }
 
 .education {
