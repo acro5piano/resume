@@ -2,6 +2,8 @@
 
 Resume template for IT engineer
 
+![](screenshot.png)
+
 # How to use
 
 ```
