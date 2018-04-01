@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "watch": "webpack-dev-server --hot"
+    "watch": "webpack-dev-server --hot",
+    "screenshot": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot --window-size=900,1200 http://localhost:3000/",
+    "build": "echo 'not working now' # /Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf --window-size=1200,1900 http://localhost:3000/"
   },
   "keywords": [],
   "author": "",
