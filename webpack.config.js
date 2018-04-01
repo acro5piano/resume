@@ -64,7 +64,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: './index.pug',
+        template: './index.ja.pug',
         filename: 'index.html',
         inject: false
       }

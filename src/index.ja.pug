@@ -1,0 +1,133 @@
+doctype html
+html(lang='en')
+  head
+    block title
+    meta(charset='UTF-8')
+    link(href='https://fonts.googleapis.com/css?family=Khula:400', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Raleway", rel="stylesheet")
+
+  body
+    .resume-container
+      .eyecatch.u-doc-container
+        h1.eyecatch-title Kaz Gosho
+        p.eyecatch-subtitle Full Stack Web Engineer
+        p.eyecatch-description
+          | Efficient and skilled in web application creation with a diverse knowledge of web technologies,
+          | I have been a web engineer for 6 years.
+          | I have garnered a multitude experiences in the field of Server-side and Front-end programming, Front-end building, SQL tuning and others.
+          | I am also familiar with Infrastructure & DevOps tools such as AWS, CircleCI and Docker.
+
+      .contact
+        .row
+          .three.columns.contact-each-first
+            p.contact-content Japanese, English
+            p.contact-heading Languages
+          .three.columns.contact-each-second
+            p.contact-content +8180-7808-4235
+            p.contact-heading Phone Number
+          .three.columns.contact-each-third
+            p.contact-content.contact-content-email ketsume0211@gmail.com
+            p.contact-heading Email
+          .three.columns.contact-each-last
+            p.contact-content Tokyo, Japan
+            p.contact-heading Location
+
+      .row.u-doc-container
+        .six.columns
+
+          h2.u-section-title Work Experience
+          .work-each
+            p.u-each-title
+              span.u-each-organization Traimmu.inc
+              span.u-each-period 2017.03 ~ Current
+            p.u-each-subtitle Lead Engineer
+            p.work-each-description
+              | I work on broadening the scale of our web application (https://www.in-fra.jp).
+              | When I first joined the company, the application was a little outdated in both infrastructure and code,
+              | so our major task is refactoring the program.
+              | I've decreased application's TTFB by 2000ms.
+              ul
+                li Replace jQuery with Vue.js
+                li Refactor Laravel source code
+                li Create iOS App with React Native
+                li Change the infrastructure from Heroku to AWS EC2
+                li Improve deployment process using Ansible on CircleCI
+                li Implement easy setup development environment Docker
+                li Visualize business KPI with Metabase
+                li SQL tuning
+
+          .work-each
+            p.u-each-title
+              span.u-each-organization  Quick CO., LTD.
+              span.u-each-period 2015.04 ~ 2017.02
+            p.u-each-subtitle Sales (2015.04 ~ 09), Engineer (2016.10 ~ 2017.02)
+            p.work-each-description
+              | I worked in sales first half a year.
+              | In the sales department, I made appointments with new customers, and secured contracts with them.
+              | Then I moved to the engineering department, where I conducted maintenance on internal systems.
+              ul
+                li Sale of Human Resource solutions
+                li Create new functions with FuelPHP
+                li Build systems
+                li Fix bugs and prevent system degradation
+
+          .education
+            h2.u-section-title Education
+            .education-each
+              span.u-each-organization Hitotsubashi University
+              span.u-each-period 2011.04 ~ 2015.03
+            p.u-each-subtitle Bachelor's Degree in Mathematics
+            ul
+              li Programming
+              li Linear Algebra, Calculus
+              li Statistics
+
+
+
+        .six.columns
+
+          .education
+            h2.u-section-title OSS Contributions
+            ul
+              li
+                span.oss-title fzf
+                span.oss-url https://github.com/junegunn/fzf
+                p.oss-description - Fix a bug for FishShell
+              li
+                span.oss-title ActiveHash
+                span.oss-url https://github.com/zilkey/active_hash
+                p.oss-description - Fix documentation mistype
+              li
+                span.oss-title enhancd
+                span.oss-url https://github.com/b4b4r07/enhancd
+                p.oss-description - Add new functions
+              li
+                span.oss-title xremap
+                span.oss-url https://github.com/k0kubun/xremap
+                p.oss-description - Fix a bug for Awesome Window Manager
+
+          .education
+            h2.u-section-title Development Skills
+            ul
+              li Linux (5 years)
+              li PHP (5 years)
+              li HTML, CSS (5 years)
+              li Laravel (2 years)
+              li JavaScript, ECMAScript (2 years)
+              li SQL (2 years)
+              li AWS, CircleCI, GitHub (2 years)
+              li Node.js (1 year)
+              li Vue.js (1 year)
+              li React, React Native (1 year)
+              li Docker (1 year)
+
+          .education
+            h2.u-section-title Profile Links
+            ul
+              li https://github.com/acro5piano
+              li https://www.linkedin.com/in/kay-gosho-587a05121
+              li https://acro5piano.github.io
+              li https://dev.to/acro5piano
+              li https://qiita.com/acro5piano (Japanese website)
+
+    script(src='/bundle.js')
