@@ -1,11 +1,10 @@
 body {
   font-family: "Khula", Arial, sans-serif;
-
   background: #eee;
   @media print {
     background: #fff;
   }
-  font-size: 13px;
+  font-size: 12px;
   & * {
     margin-bottom: 0.5px;
   }
@@ -97,11 +96,11 @@ li {
   font-size: $xlarge;
   color: $info;
   letter-spacing: 0.3px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .u-each-title {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .u-each-organization {
@@ -109,7 +108,8 @@ li {
 }
 
 .u-each-subtitle {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  color: #888;
 }
 
 .u-each-period {
@@ -119,6 +119,6 @@ li {
 }
 
 .u-doc-container {
-  padding: 30px;
+  padding: 20px 30px 16px;
 }
 
