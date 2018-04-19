@@ -2,7 +2,7 @@
 
 Resume of Kazuya Gosho, built with Webpack + Pug + Postcss.
 
-![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.png)
+![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.en.png)
 
 # Getting started
 
