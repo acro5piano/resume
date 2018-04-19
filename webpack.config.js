@@ -64,11 +64,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: './index.ja.pug',
+        template: './index.pug',
         filename: 'index.html',
         inject: false
       }
     )
   ]
 };
-
