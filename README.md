@@ -4,6 +4,8 @@ Resume of Kazuya Gosho, built with Webpack + Pug + Postcss.
 
 ![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.en.png)
 
+Why I created this repository: https://dev.to/acro5piano/5-reasons-why-git-based-resume-is-awesome-127
+
 # Getting started
 
 After checking out the repo, run:
