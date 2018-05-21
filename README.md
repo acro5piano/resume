@@ -52,6 +52,23 @@ To take a screenshot, just run
 
 This runs your Chrome headlessly and take an image.
 
+# Production build
+
+To build all assets, run:
+
+```
+yarn build
+```
+
+This does:
+
+- Bundle files with Webpack production mode
+- Take screenshot as `png` and `pdf`
+
+# Netlify
+
+Soon
+
 # TODO
 
 - [x] Add script for taking screenshot.

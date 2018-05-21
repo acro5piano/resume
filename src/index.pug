@@ -7,6 +7,7 @@ html(lang='en')
     link(href="https://fonts.googleapis.com/css?family=Raleway", rel="stylesheet")
 
   body
+    .header
     .resume-container
       .eyecatch.u-doc-container
         h1.eyecatch-title Kaz Gosho
@@ -38,8 +39,22 @@ html(lang='en')
           h2.u-section-title Work Experience
           .work-each
             p.u-each-title
+              span.u-each-organization Self Employed
+              span.u-each-period 2018.04 ~ Current
+            p.u-each-subtitle Presidenet
+            p.work-each-description
+              | I solve various kind of technical problems as an independen consultunt.
+              ul
+                li AWS managemnet (EC2, RDS, ElastiCache, ECS, Lambda, CloudFront, CloudWatch, etc.)
+                li React + Almin
+                li Improve React Native app working flow using Fastlane
+                li Create React Native tutorial for Programming education company
+                li Consult business strategy for startups
+
+          .work-each
+            p.u-each-title
               span.u-each-organization Traimmu.inc
-              span.u-each-period 2017.03 ~ Current
+              span.u-each-period 2017.03 ~ 2018.04
             p.u-each-subtitle Lead Engineer
             p.work-each-description
               | I work on broadening the scale of our web application (https://www.in-fra.jp).
@@ -129,5 +144,6 @@ html(lang='en')
               li https://acro5piano.github.io
               li https://dev.to/acro5piano
               li https://qiita.com/acro5piano (Japanese website)
+    .footer
 
-    script(src='/bundle.js')
+    script(src='bundle.js')
