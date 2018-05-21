@@ -51,7 +51,6 @@ To create Japanese resume, `HtmlWebpackPlugin` in `webpack.config.js` like this:
 
 To take a screenshot, just run
 
-- `yarn start`
 - `yarn screenshot`
 
 This runs your Chrome headlessly and take an image.
