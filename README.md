@@ -76,14 +76,13 @@ Soon
 # TODO
 
 - [x] Add script for taking screenshot.
+- [x] Create GitHub page or something to render this as actual web page. → netlify
+- [x] Add script for build. Generate multilingual PDF to `/dist`.
+- [ ] Use React.js or Vue.js for template rendering. This is for HMR and scoped CSS and internationalization.
 - [ ] Add ESLint for stability.
 - [ ] Add Flow for type-safe and null-safe.
 - [ ] Internationalization. currently I need `en` and `ja`. For the time being create `index.ja.pug`.
-- [ ] Use React.js or Vue.js for template. This is for HMR and scoped CSS and internationalization.
-- [ ] Add script for build. Generate multilingual PDF to `/dist`.
-- [ ] `screenshot` command Internationalization.
-- [ ] Create GitHub page or something to render this as actual web page.
-  - [ ] Hopefully, change language interactively.
+- [ ] `screenshot` command for all languages.
 
 # Contribution
 
