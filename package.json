@@ -8,9 +8,9 @@
     "build": "npm-run-all clean build:html screenshot:*",
     "build:html": "cross-env NODE_ENV=production webpack --progress",
     "screenshot": "npm-run-all --parallel screenshot:*",
-    "screenshot:pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf=resume-kaz_gosho.pdf --window-size=900,1200 dist/index.html ",
-    "screenshot:png": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot --window-size=900,1200 ./dist/index.html",
-    "clean": "rimraf dist && mkdir dist"
+    "screenshot:pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf=dist/resume-kaz_gosho.pdf --window-size=900,1200 dist/index.html ",
+    "screenshot:png": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot=dist/resume-kaz_gosho.png --window-size=900,1200 ./dist/index.html",
+    "clean": "rimraf dist && mkdir dist && touch dist/.gitkeep"
   },
   "keywords": ["resume", "developer", "nodejs", "webpack"],
   "author": "Kazuya Gosho ketsume0211@gmail.com",

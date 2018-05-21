@@ -2,6 +2,10 @@
 
 Resume of Kazuya Gosho, built with Webpack + Pug + Postcss.
 
+We can create static website really easilly with Netlify. Thanks!!
+
+https://cranky-heisenberg-039d2a.netlify.com/
+
 ![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.en.png)
 
 Why I created this repository: https://dev.to/acro5piano/5-reasons-why-git-based-resume-is-awesome-127
