@@ -78,6 +78,7 @@ Soon
 - [x] Add script for taking screenshot.
 - [x] Create GitHub page or something to render this as actual web page. → netlify
 - [x] Add script for build. Generate multilingual PDF to `/dist`.
+- [ ] Page too big to fit A4. Time to divide.
 - [ ] Use React.js or Vue.js for template rendering. This is for HMR and scoped CSS and internationalization.
 - [ ] Add ESLint for stability.
 - [ ] Add Flow for type-safe and null-safe.
