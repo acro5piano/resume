@@ -8,15 +8,19 @@
     "build": "npm-run-all clean build:html screenshot:*",
     "build:html": "cross-env NODE_ENV=production webpack --progress",
     "screenshot": "npm-run-all --parallel screenshot:*",
-    "screenshot:pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf=dist/resume-kaz_gosho.pdf --window-size=900,1200 ./dist/index.html ",
-    "screenshot:png": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot=dist/resume-kaz_gosho.png --window-size=900,1200 ./dist/index.html",
+    "screenshot:pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf=dist/resume-kaz_gosho.pdf --page-ranges=1 --window-size=900,1200 ./dist/index.html ",
+    "screenshot:png": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot=dist/resume-kaz_gosho.png --page-ranges=1 --window-size=900,1200 ./dist/index.html",
     "clean": "rimraf dist && mkdir dist && touch dist/.gitkeep"
   },
-  "keywords": ["resume", "developer", "nodejs", "webpack"],
+  "keywords": [
+    "resume",
+    "developer",
+    "nodejs",
+    "webpack"
+  ],
   "author": "Kazuya Gosho ketsume0211@gmail.com",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",
@@ -29,6 +33,7 @@
     "postcss-loader": "^2.0.6",
     "postcss-simple-vars": "^4.0.0",
     "precss": "^2.0.0",
+    "prettier": "^1.15.3",
     "pug": "^2.0.0-rc.3",
     "pug-loader": "^2.3.0",
     "rimraf": "^2.6.2",

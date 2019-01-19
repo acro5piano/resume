@@ -19,7 +19,7 @@ yarn install
 yarn start
 ```
 
-open localhost:3000 and you can see my resume.
+open http://localhost:3000 and you can see my resume.
 
 # Write your resume with this template
 
@@ -51,6 +51,7 @@ To create Japanese resume, `HtmlWebpackPlugin` in `webpack.config.js` like this:
 
 To take a screenshot, just run
 
+- `yarn build:html`
 - `yarn screenshot`
 
 This runs your Chrome headlessly and take an image.

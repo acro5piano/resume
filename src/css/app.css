@@ -1,5 +1,5 @@
 body {
-  font-family: "Khula", Arial, sans-serif;
+  font-family: 'Khula', Arial, sans-serif;
   background: #eee;
   @media print {
     background: #fff;
@@ -84,18 +84,18 @@ li {
 }
 
 .oss-description {
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .education {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .u-section-title {
   font-size: $xlarge;
   color: $info;
   letter-spacing: 0.3px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .u-each-title {
@@ -118,10 +118,25 @@ li {
 }
 
 .u-doc-container {
-  padding: 16px 30px;
+  padding: 16px 20px;
 }
 
 @media print {
-  @page { margin: 0; }
-  body { margin: 0; }
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  header h1,
+  header nav,
+  footer,
+  img {
+    display: none;
+  }
+}
+
+@page {
+  size: auto; /* auto is the initial value */
+  margin: 0mm; /* this affects the margin in the printer settings */
 }
