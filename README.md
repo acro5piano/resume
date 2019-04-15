@@ -23,7 +23,7 @@ open http://localhost:3000 and you can see my resume.
 
 # Write your resume with this template
 
-Feel free to write your resume with this template, if you are enough odd to do so.
+Feel free to write your resume with this template, if you are odd enough to do so.
 
 - `src/app.postcss` is for css
 - `src/index.pug` is for template
