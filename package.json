@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "build": "npm-run-all clean build:html screenshot:*",
+    "build": "npm-run-all clean build:html screenshot",
     "build:html": "cross-env NODE_ENV=production webpack --progress",
     "screenshot": "npm-run-all --parallel screenshot:*",
-    "screenshot:pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --print-to-pdf=dist/resume-kaz_gosho.pdf --page-ranges=1 --window-size=900,1200 ./dist/index.html ",
-    "screenshot:png": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --screenshot=dist/resume-kaz_gosho.png --page-ranges=1 --window-size=900,1200 ./dist/index.html",
-    "clean": "rimraf dist && mkdir dist && touch dist/.gitkeep"
+    "screenshot:pdf": "yarn run chrome --print-to-pdf=dist/resume-kaz_gosho.pdf ./dist/index.html ",
+    "screenshot:png": "yarn run chrome --screenshot=dist/resume-kaz_gosho.png ./dist/index.html",
+    "screenshot:pdf-ja": "yarn run chrome --print-to-pdf=dist/resume-kaz_gosho.ja.pdf ./dist/index.ja.html ",
+    "screenshot:png-ja": "yarn run chrome --screenshot=dist/resume-kaz_gosho.ja.png ./dist/index.ja.html",
+    "chrome": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --page-ranges=1 --window-size=900,1200",
+    "clean": "rimraf dist && mkdir dist && touch dist/.gitkeep",
+    "format": "prettier --write src/**/*.{ts,tsx,css} README.md"
   },
   "keywords": [
     "resume",
@@ -33,7 +37,7 @@
     "postcss-loader": "^2.0.6",
     "postcss-simple-vars": "^4.0.0",
     "precss": "^2.0.0",
-    "prettier": "^1.15.3",
+    "prettier": "^1.17.0",
     "pug": "^2.0.0-rc.3",
     "pug-loader": "^2.3.0",
     "rimraf": "^2.6.2",

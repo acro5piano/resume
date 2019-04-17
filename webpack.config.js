@@ -15,13 +15,13 @@ module.exports = {
   devServer: {
     contentBase: 'dist',
     port: 3000,
-    hot: true
+    hot: true,
   },
 
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.js'
-    }
+      vue: 'vue/dist/vue.js',
+    },
   },
 
   module: {
@@ -34,12 +34,12 @@ module.exports = {
       {
         test: /\.pug$/,
         exclude: /node_modules/,
-        loader: 'pug-loader'
+        loader: 'pug-loader',
       },
       {
         test: /\.jpg$/,
         exclude: /node_modules/,
-        loader: 'file-loader'
+        loader: 'file-loader',
       },
       {
         test: /\.css$/,
@@ -52,22 +52,25 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
-            }
+            },
           },
           {
-            loader: 'postcss-loader'
-          }
-        ]
+            loader: 'postcss-loader',
+          },
+        ],
       },
-    ]
+    ],
   },
   plugins: [
-    new HtmlWebpackPlugin(
-      {
-        template: './index.pug',
-        filename: 'index.html',
-        inject: false
-      }
-    )
-  ]
-};
+    new HtmlWebpackPlugin({
+      template: './index.pug',
+      filename: 'index.html',
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.ja.pug',
+      filename: 'index.ja.html',
+      inject: true,
+    }),
+  ],
+}
