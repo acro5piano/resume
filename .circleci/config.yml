@@ -18,7 +18,7 @@ aliases:
       key: v2-dependencies-{{ checksum "package.json" }}
 
 jobs:
-  test:
+  build:
     <<: *defaults
     steps:
       - checkout
