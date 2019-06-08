@@ -24,5 +24,5 @@ jobs:
       - checkout
       - restore_cache: *restore_cache
       - run: yarn install
-      - run: yarn build
+      - run: yarn build:html
       - save_cache: *save_cache
