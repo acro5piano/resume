@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/acro5piano/resume/tree/master.svg?style=svg)](https://circleci.com/gh/acro5piano/resume/tree/master)
+
 # Resume
 
 Resume of Kazuya Gosho, built with Webpack + Pug + Postcss.
