@@ -80,6 +80,10 @@ header{
     color: #fff;
     	
 }
+.contacts li span{
+    display:none;
+    	
+}
 .contacts li a:hover {
 	 text-decoration: underline;
 	 color:#effd46;
@@ -451,6 +455,9 @@ section h3::first-letter {
    margin-bottom: 15px;
    display: block;
 }
+span.linkprint {
+   display: none;
+}
 .works article a::after {
 	content: ' ';
 	width: 0;
@@ -508,6 +515,9 @@ section h3::first-letter {
    color: #fff;
    font-size: 12pt;
 }
+.social li a  span{
+   display: none;
+}
 .social li a:hover {
    text-decoration: underline;
    color:#effd46;
@@ -525,9 +535,12 @@ footer {
     margin:0;
     padding:20px;
 }
-footer .copyright {
+footer .copyright, .desktopflag,.printflag {
 	 color:#effd46;
 	 font-weight: bold;
 	 font-size: 14pt;
     text-align: center;
+}
+.printflag {
+    display: none;
 }
