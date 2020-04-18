@@ -9,7 +9,12 @@ header{
     padding:40px;	
     height: 190px;		
 }
-
+footer {
+	 background-color:RGB(53,79,255);
+    color:#FFFFFF;
+    margin:0;
+    padding:20px;
+}
 .userdata{
     margin-left:10px;    
     float:left;
@@ -366,14 +371,15 @@ section h3::first-letter {
 .works{
 	display: flex;
 	justify-content: space-around;
-	
+	flex-wrap: wrap;
 }
 .works article {
 	width:38%; 
 	border:1px solid #dcdcdc;
 	padding: 15px;
 	margin: 15px;
-	box-shadow: 1px 1px 8px 3px #f5f5f5; 
+	box-shadow: 1px 1px 8px 3px #f5f5f5;
+	background-color:#fafafa; 
 }
 .works article a{
    position: relative;
@@ -392,4 +398,20 @@ section h3::first-letter {
 	top: 2px;
 	left: -25px;
 	z-index: 20;
+}
+.creative {
+   margin: 0;
+   margin-top: 25px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:left;
+      
+}
+.creative li {
+   width: 30%;
+   border:1px solid #dcdcdc;
+	padding: 15px;
+	margin-right: 25px;
+	box-shadow: 1px 1px 8px 3px #f5f5f5;
+	background-color:#fafafa; 
 }
