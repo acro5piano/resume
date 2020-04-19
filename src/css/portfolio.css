@@ -352,6 +352,7 @@ A:hover{
 section {
 	width:70%;	
 	background-color: #FEFEFE;
+	padding-bottom: 40px;
 }
 section h2 {
     margin-left: 65px;
@@ -485,6 +486,7 @@ span.linkprint {
 	margin-right: 25px;
 	box-shadow: 1px 1px 8px 3px #f5f5f5;
 	background-color:#fafafa; 
+	margin-bottom: 25px;
 }
 .creative li p a{
 	position:relative; 
@@ -535,12 +537,15 @@ footer {
     margin:0;
     padding:20px;
 }
+footer .copyright p span {
+    text-transform: uppercase;
+}
 footer .copyright, .desktopflag,.printflag {
 	 color:#effd46;
 	 font-weight: bold;
 	 font-size: 14pt;
     text-align: center;
 }
-.printflag {
+.printflag, .tabletflag, .mobileflag {
     display: none;
 }

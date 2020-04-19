@@ -187,6 +187,8 @@ footer .copyright {
     display: none;
 }
 .printflag {
-    display: inline;
+    display: block!important;
+    font-size: 10pt!important;
+    text-align: left!important;
 }
 }

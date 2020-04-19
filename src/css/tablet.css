@@ -1,0 +1,48 @@
+@media (min-width: 836px) and (max-width: 1056px) {
+    .name {
+       width:350px;
+       
+    }
+    .userdata h1 {
+       letter-spacing:0;
+       font-size:20pt;    
+    }
+    .userdata {
+       width:350px;    
+    }
+    .userdata div{ 
+       width:100px;
+       height:100px;
+       margin-top:35px; 
+    }
+    .works article, .creative li {
+	    width:90%;
+	 } 
+	 .creative li { 
+	    margin-right: 0;
+	    margin-left: -20px;
+    }  
+    .menulist .item{
+      margin-left:5px;    
+    }
+    .social li {
+      padding-left:10px;
+      margin-left: 10px;    
+    }
+    .social {
+      margin:25px 0;
+      width:95%;    
+    }
+    footer .copyright  {
+      font-size: 12pt;    
+    }
+    .desktopflag {
+      display:none;    
+    }
+    .printflag {
+      display:none;    
+    }
+    .tabletflag {
+      display: inline;    
+    }
+}
