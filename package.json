@@ -1,7 +1,10 @@
 {
   "name": "resume",
-  "version": "1.1.0",
-  "description": "The resume of Kazuya Gosho",
+  "version": "1.4.0",
+  "description": "The resume of Ivan Shavliuga (Ivanov)",
+  "author":"Ivan Shavliuga (Ivanov)",
+  "email": "iva.drakon.nov@gmail.com",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
@@ -20,11 +23,16 @@
     "resume",
     "developer",
     "nodejs",
-    "webpack"
+    "webpack",
+    "pug"
   ],
-  "author": "Kazuya Gosho ketsume0211@gmail.com",
-  "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+  	  "babel-polyfill": "^6.13.0",
+    "babel-runtime": "^6.0.0",
+    "lodash": "^4.17.4",
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",
@@ -41,6 +49,14 @@
     "pug": "^2.0.0-rc.3",
     "pug-loader": "^2.3.0",
     "rimraf": "^2.6.2",
+    "less": "^2.7.1",
+    "less-loader": "^4.0.5",
+    "url-loader": "^0.6.2",
+    "vue-hot-reload-api": "^2.2.4",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^13.7.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.13",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
