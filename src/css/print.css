@@ -111,8 +111,8 @@ li .line::after, li .line::before, .liststart {
 }
 .desc ul li {
    display: block!important;
-   width:150pximportant;
-   margin-left:20px!important;
+   width:164px!important;
+   margin-left:-24px!important;
 }
 .desc ul li:last-child {
 	margin-left:0!important;
@@ -160,6 +160,7 @@ section h3::first-letter, .skills li::first-letter {
 	box-shadow:none!important;
 	background-color:#fff!important;
 }
+/*
 .social {
    margin:10px!important;
    text-align: left!important;
@@ -169,6 +170,9 @@ section h3::first-letter, .skills li::first-letter {
    display:block!important;
    width:100%!important;
    margin-top:5px!important;
+}*/
+.social {
+   display: none!important;
 }
 footer {
    margin-top:15px!important;
@@ -183,8 +187,8 @@ footer .copyright {
 	 font-size: 10pt!important;
     text-align: left!important;
 }
-.desktopflag  {
-    display: none;
+.desktopflag,.tabletflag  {
+    display: none!important
 }
 .printflag {
     display: block!important;
