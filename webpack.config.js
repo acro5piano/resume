@@ -1,4 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path')
+var webpack = require('webpack')
+
 
 module.exports = {
   context: __dirname + '/src',
@@ -19,46 +22,38 @@ module.exports = {
   },
 
   resolve: {
-    alias: {
-      vue: 'vue/dist/vue.js',
-    },
+        extensions: ['.js', '.vue'],
+        alias: {
+            components: path.join(__dirname, './src/components'),
+            'vue$': 'vue/dist/vue.esm.js'
+        }
   },
 
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-      },
+    rules: [{
+            test: /\.vue$/,
+            use: 'vue-loader'
+        }, {
+            test: /\.js$/,
+            use: 'babel-loader',
+            exclude: /node_modules/
+        }, {
+            test: /\.css$/,
+            use: ['vue-style-loader', 'css-loader']
+        }, {
+            test: /\.less$/,
+            use: ['vue-style-loader', 'css-loader', 'less-loader']
+        },
       {
         test: /\.pug$/,
         exclude: /node_modules/,
         loader: 'pug-loader',
       },
       {
-        test: /\.jpg$/,
-        exclude: /node_modules/,
-        loader: 'file-loader',
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-          },
-        ],
-      },
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader'
+      }
+      
     ],
   },
   plugins: [
