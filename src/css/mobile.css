@@ -1,52 +1,5 @@
-@media (min-width: 378px) and (max-width: 499px){
-  header {
-      height: 350px;
-      width: 100%;
-      display: flex;
-      flex-direction:column-reverse;
-      justify-content:center;
-      padding: 0;  
-  }
-  
- .name {
-       width:350px;
-       margin: 0 auto;
-       display: block;
-    }
-  .contacts {
-     margin: 0 auto;
-     width:100%;  
-     display:block; 
-  } 
-  .userdata {
-     display:block;  
-  }
-  .userdata div{ 
-       width:80px;
-       height:80px;
-       margin-top:15px; 
-    }
-   .userdata h1 {
-     font-size: 16pt;
-     letter-spacing: -1px;
-     margin-top:35px;    	
-   }
-   main {
-    display:block;
-    padding:0;
-    margin:0;  
-  }   
-  nav {
-    width: 100%;
-    margin:0;
-    padding-top:15px;  
-  }
-  section {
-    width:100%;  
-  }
-}
 
-@media (max-width: 377px){
+@media (max-width: 499px){
 	body,html {
      margin: 0;
      padding:0;
@@ -160,7 +113,7 @@ main {
   li.item .images {
 	display: flex;
 	justify-content: center;
-	margin-left: -25px;
+	margin-left: 0;
 	width: 100%;
   }
   li.item .desc{
@@ -170,12 +123,7 @@ main {
   li.item:last-child{
   	 margin-top: -40px;
   }
-  li .line::before {
-     display:none;  
-  }
-  li .line::after {
-     display:none;  
-  }
+  
   
 .desc ul.skills {
     display:block!important;
@@ -216,6 +164,9 @@ ul.creative li {
 .creative li {
    width: 220px;
 }
+.creative li h3, article h3  {
+   margin-top: 10px;
+}
 .social {
   width: 220px;
   margin: 0;
@@ -244,8 +195,6 @@ div.copyright{
   width: 260px;
 }
 html body main section {
-  width: 100%!important;
-  
   margin-top: -40px;
 }
 h2 {
