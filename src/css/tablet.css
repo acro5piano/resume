@@ -48,6 +48,9 @@
 }
 
 @media (min-width: 500px) and (max-width: 835px) { 
+  body {
+      background-color: #fff;  
+  }
   header {
       height: 380px;
       display: flex;
@@ -83,6 +86,7 @@
 	 .creative li { 
 	    margin-right: 0;
 	    margin-left: -20px;
+	    width: 95%;
     }  
     .menulist .item{
       margin-left:5px;    
@@ -110,14 +114,18 @@
   main {
     display:block;
     padding:0;
-    margin:0;  
+    margin:0; 
+    
+     width: 100%; 
   }   
-  nav {
-    width: 100%;
+  nav  {
+    width: 95%;
     margin:0;
+    background: #fff;
     padding-top:15px;  
   }
   section {
-    width:100%;  
+    width:95%;  
+    margin-bottom: -30px;
   }
 }
