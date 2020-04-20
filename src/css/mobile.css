@@ -1,0 +1,257 @@
+@media (min-width: 378px) and (max-width: 499px){
+  header {
+      height: 350px;
+      width: 100%;
+      display: flex;
+      flex-direction:column-reverse;
+      justify-content:center;
+      padding: 0;  
+  }
+  
+ .name {
+       width:350px;
+       margin: 0 auto;
+       display: block;
+    }
+  .contacts {
+     margin: 0 auto;
+     width:100%;  
+     display:block; 
+  } 
+  .userdata {
+     display:block;  
+  }
+  .userdata div{ 
+       width:80px;
+       height:80px;
+       margin-top:15px; 
+    }
+   .userdata h1 {
+     font-size: 16pt;
+     letter-spacing: -1px;
+     margin-top:35px;    	
+   }
+   main {
+    display:block;
+    padding:0;
+    margin:0;  
+  }   
+  nav {
+    width: 100%;
+    margin:0;
+    padding-top:15px;  
+  }
+  section {
+    width:100%;  
+  }
+}
+
+@media (max-width: 377px){
+	body,html {
+     margin: 0;
+     padding:0;
+     background-color: #fff;
+     max-width: 100%;
+     margin-right: 0;
+     
+	}
+	
+  header {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction:column-reverse;
+      justify-content:center;
+      padding:0;
+      margin:0;  
+  }
+  
+ .name {
+       width:260px;
+       margin: 10px auto;
+       padding: 0;
+       text-align: center;
+    }
+  .contacts {
+     margin: 10px auto;
+     width:90%;  
+     display: flex;
+      flex-direction:column-reverse;
+      justify-content:center;
+     clear: both;
+  } 
+  
+  .userdata {
+     display: flex;
+     flex-direction:column;
+     justify-content:center;
+     flex-wrap:wrap;
+     width:100%; 
+     margin:0;
+  }
+  .userdata div{ 
+       width:80px;
+       height:80px;
+       margin: 10px auto;  
+       clear: both;
+    }
+    .userdata h1, .userdata p {
+       display:block;
+       min-width:100%;
+        padding-bottom: 8px;   
+     margin: 0;	
+       text-align: center; 
+    }
+   .userdata h1 {
+     font-size: 14pt;
+     letter-spacing: -1px;
+   }
+   .userdata p {
+     font-size:12pt;   
+   }
+   .contacts ol li, .contacts ol, .contacts {
+     margin:0;   
+   }
+    .contacts ol li p {
+         font-size:10pt; 
+         width:90%; 
+    }
+     .contacts ol li {
+         margin-right:-40px; 
+         width:90%;    
+     }
+     .contacts ol li:before{
+  width:15px;
+  height:15px;
+  left:5px;
+}
+main {
+	border-top:2px solid white;
+   margin-top: -20px;
+   padding-top: 20px;
+   
+}
+  nav, main,.menulist, .works, .creative, .item {
+    margin:0;
+    padding:0; 
+    display:block; 
+     width:95%; 
+     margin-right:0; 
+  }
+  nav{
+    border-right:none;  
+      width: 95%;
+    background: #fff;
+  }
+  a, p, span {
+     font-size: 10pt;
+  }
+  .interes{
+    width:32px;
+    height:32px;
+    margin-left: 60px;
+  }
+  .interes:first-child {
+    margin-left:0;  
+  }
+  .interes p {
+    font-size: 10pt;  
+  }
+  li.item .images {
+	display: flex;
+	justify-content: center;
+	margin-left: -25px;
+	width: 100%;
+  }
+  li.item .desc{
+    margin-left: -5px;
+    margin-top: 0;
+  }
+  li.item:last-child{
+  	 margin-top: -40px;
+  }
+  li .line::before {
+     display:none;  
+  }
+  li .line::after {
+     display:none;  
+  }
+  
+.desc ul.skills {
+    display:block!important;
+    width: 100%;
+    
+}
+.desc ul.skills li {
+    display: inline-block!important;
+    margin: 0!important;
+    word-spacing:-2px!important; 
+    padding-left: 3px!important;
+}
+.works article {
+	width:90%; 
+	margin-right:0; 
+}
+section {
+	width: 95%;
+   
+}
+ul.creative {
+   padding: 0;
+   margin: 15px;
+   width: 95%;
+}
+ul.creative li {
+	 width: 90%;
+}
+.mobileflag {
+   display: block;
+   font-size: 12pt;
+   width:240px;
+   text-align: center;
+}
+.desktopflag {
+  display: none;
+}
+.creative li {
+   width: 220px;
+}
+.social {
+  width: 220px;
+  margin: 0;
+  text-align: left;
+}
+.social li {
+   margin-left: 0;
+   padding-right: 0; 
+   display: block;
+}
+.copyright p {
+  text-align: left;
+  width:260px;
+  margin: 0;
+  padding: 10px;
+}
+footer {
+  margin: 0;
+  padding: 20px 0 10px 0;
+  width: 100%;
+	
+}
+div.copyright{
+ margin: 0;
+  padding: 0;
+  width: 260px;
+}
+html body main section {
+  width: 100%!important;
+  
+  margin-top: -40px;
+}
+h2 {
+  width:150px;
+}
+main nav li.item {
+  margin-right: 0!important;
+}
+}
