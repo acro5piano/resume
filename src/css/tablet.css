@@ -89,7 +89,8 @@
 	    width: 95%;
     }  
     .menulist .item{
-      margin-left:5px;    
+      margin-left:5px;
+      width:85%;    
     }
     .social li {
       padding-left:10px;
@@ -128,4 +129,12 @@
     width:95%;  
     margin-bottom: -30px;
   }
+
+  .menulist {
+  	 width:95%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;     
+  }
+  
 }
