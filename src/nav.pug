@@ -3,14 +3,14 @@ nav
     li.item 
       h2 Profile 
       .desc 
-        h3 Ivan Shavliuga 
+        h3 {{name}} 
         p 
-          b Junior FrontEnd developer
+          b {{prof}}
         p I make site layout to order. 
         p 
-          a(href="mailto://iva.drakon.nov@gmail.com") iva.drakon.nov@gmail.com
+          a(:href="email") {{email}}
           span.linkprint iva.drakon.nov@gmail.com 
-        p(title="The user wanted to hide their phone number") +375 ** *** ** 23 
+        p(title="The user wanted to hide their phone number") {{phone}} 
     li.item
       h2 Interests
       .images
@@ -24,53 +24,24 @@ nav
       h2 Skills 
       .desc 
         ul.skills 
-          li html5
-          li css3
-          li scss
-          li less
-          li pug
-          li Angular (beginners)
-          li vue.js (2.x)
-          li Vue-Router
-          li Vuex
-          li npm
-          li Webpack
-          li Bootstrap (4.x)
-          li EcmaScript (2015)
-          li git
-          li adaptive design
+          li( v-for="(s,k) in skills" :key="s") {{s}}
     li.item 
       h2 Education 
       .desc
         ul
-          li.line
-            .lineinfo 2006-2011, 3.5 years
-              a(href="psu.by" target="_blank") Polotsk state University
-              span.linkprint Polotsk state University (psu.by)
-              span information technology software
-          li.line
-            .lineinfo 2018-2019
-              a(href="intuit.ru" target="_blank") INTUIT (Free courses)
-              span.linkprint INTUIT (Free courses, intuit.ru) 
-              span Basis HTML, CSS, JavaScript
-          li.line
-            .lineinfo 2018-now
-              a(href="geekbrains.ru" target="_blank") GeekBrains (Free courses) 
-              span.linkprint GeekBrains (Free courses, geekbrains.ru)
-              span advanced  HTML, CSS, JavaScript 
+          li.line(v-for="(e,k) in education" :key="k")
+            .lineinfo {{e.years}}
+              a(:href="e.link" target="_blank") {{e.caption}}
+              span.linkprint {{e.caption}} ({{e.link}})
+              span {{e.desc}}
     li.item
       h2 Work experience 
       .desc
         ul
-          li.line
-            .lineinfo 09/2018 - Now
-              a(href="https://mendel-info.usite.pro") Table of Mendeleev
-              span.linkprint Table of Mendeleev (mendel-info.usite.pro) 
-              span Administrator
-          li.line 
-            .lineinfo  12/2019- Now 
-              a(href="https://www.geekbrains.ru") Maybebaby project
-              span.linkprint Maybebaby project (www.geekbrains.ru)  
-              span junior Vue.js developer
+          li.line(v-for="(w,k) in work" :key="k")
+            .lineinfo {{w.years}}
+              a(:href="w.link" target="_blank") {{w.caption}}
+              span.linkprint {{w.caption}} ({{w.link}})
+              span {{w.desc}}
     
         

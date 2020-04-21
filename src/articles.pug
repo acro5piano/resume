@@ -3,106 +3,19 @@
 section
   h2 Portfolio 
   .works
-    article
-      h3 News portal 
-      a(href=sitelink+"/vuejsnews" target="_blank")=sitetitle
-      span.linkprint github.com/IvanShavliuga/vuejsnews 
-      p News portal using vue technologies .js and css, bootstrap. 
-        | This project is a simple social news network. 
-        | The project was created specifically for self- learning. 
-        | Implemented groups, users, news feed, the ability to edit material and create groups, 
-        | as well as send messages, put likes, comments and reposts. I will be happy if you find errors in the code.
+    article(v-for="(p,k) in portfolio" :key="k" :id="'article-'+k")
+      h3 {{p.title}}
+      a(:href="p.sitelink" target="_blank") {{p.sitetitle}}
+      span.linkprint {{p.sitelink}} 
+      p {{p.desc}}
       ul.skills 
-        li html5
-        li css3
-        li scss
-        li vue.js (2.x)
-        li Vue-Router
-        li Vuex
-        li npm
-        li Webpack
-        li Bootstrap (4.x)
-        li EcmaScript (2015)
-        li git
-        li adaptive design
-    article
-      h3 Task manager and timer 
-      a(href=sitelink+"/vuejstimer" target="_blank")=sitetitle
-      span.linkprint github.com/IvanShavliuga/vuejsnews/vuejstimer 
-      p News portal using vue technologies .js and css, bootstrap. 
-        | This project is a simple social news network. 
-        | The project was created specifically for self- learning. 
-        | Implemented groups, users, news feed, the ability to edit material and create groups, 
-        | as well as send messages, put likes, comments and reposts. I will be happy if you find errors in the code.
-      ul.skills 
-        li html5
-        li css3
-        li scss
-        li vue.js (2.x)
-        li npm
-        li Webpack
-        li EcmaScript (2015)
-        li git
-        li adaptive design
-    article
-      h3 Chat 
-      a(href=sitelink+"/vue-chat" target="_blank")=sitetitle
-      span.linkprint github.com/IvanShavliuga/vuejsnews/vue-chat
-      p Multi-user Chat for exchanging short messages using some html tags
-      ul.skills 
-        li html5
-        li css3
-        li less
-        li vue.js (2.x)
-        li npm
-        li Webpack
-        li EcmaScript (2015)
-        li git
-        li adaptive design
-        li own design
-    article
-      h3 Vue.js mail application 
-      a(href=sitelink+"/vuejs-mail-app" target="_blank")=sitetitle
-      span.linkprint github.com/IvanShavliuga/vuejsnews/vuejs-mail-app
-      p Just a project for self-learning vue.js technology. 
-        | Development of a multi-user mail application (only frontend parts) 
-        | for your own needs and learning vue.js for further professional growth as a specialist. 
-        | The project must switch between users and be able to add new ones). 
-        | It should be possible to send messages to spam, and forward messages between users.
-      ul.skills 
-        li html5
-        li css3
-        li Bootstrap (4.x)
-        li vue.js (2.x)
-        li npm
-        li Webpack
-        li EcmaScript (2015)
-        li git
-        li adaptive design
-        li own design
+        li(v-for="(t,k1) in p.tech" :key="k+'_'+k1" :id="'tech-'+k+'_'+k1") {{t}}
   h2 Creation
   ul.creative
-    li 
-      h3 Literature
-      p 
-        a(href="http://author.today/u/ischavliuga/works" target="_blank") Author Today
-        span.linkprint http://author.today/u/ischavliuga/works
-      p 
-        a(href="http://samlib.ru/i/iwan_sergeewich_shawljuga/" target="_blank") Samlib
-        span.linkprint http://samlib.ru/i/iwan_sergeewich_shawljuga/
-      p
-        a(href="https://https://isschavliuga.ucoz.net" target="_blank") Personal web-site
-        span.linkprint https://https://isschavliuga.ucoz.net
-    li 
-      h3 Science 
-      p
-        a(href="https://mendel-info.usite.pro" target="_blank") Table of Mendeleev
-        span.linkprint Table of Mendeleev (https://mendel-info.usite.pro)
-      p
-        a(href="https://t.me/mendelinfo" target="_blank") Telegram channel of science
-        span.linkprint Telegram channel of science (@mendelinfo) 
-      p
-        a(href="https://www.t.me/vuejscodesru" target="_blank") Telegram channel of framework vue.js
-        span.linkprint Telegram channel of framework vue.js (@vuejscodesru)
-                     
+    li(v-for="(c,k) in creative" :key="'creative_'+k" :id="'creative_'+k") 
+      h3 {{c.category}}
+      p(v-for="(l,k1) in c.linkslist" :key="'creative_'+k" :id="'creative_'+k+'_'+k1")
+        a(:href="l.link" target="_blank" :title="l.name") {{l.name}}
+        span.linkprint {{l.link}}
+      
             
