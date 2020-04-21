@@ -30,6 +30,11 @@ new Vue({
       	caption: "GeekBrains (Free courses)",
       	link:"geekbrains.ru",
       	desc:"advanced JavaScript, HTML, CSS"
+      },{
+      	years: "2020 - now",
+      	caption: "ITVDN (Free course landing page)",
+      	link:"itvn.com",
+      	desc:"basic Pug, SCSS"
       }],
       work: [{
          years:"09/2018 - Now",
