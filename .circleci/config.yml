@@ -2,7 +2,7 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: circleci/node:10.3.0
+    - image: circleci/node:12.14.0
       environment:
         TZ: /usr/share/zoneinfo/Asia/Tokyo
   working_directory: ~/repo
