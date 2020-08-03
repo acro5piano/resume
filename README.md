@@ -1,3 +1,7 @@
+**Do you have any questions about GraphQL, TypeScript, or React?**
+
+I'm happy to assist you via Remotehour. Feel free to call me if I'm online → https://remotehour.com/kay/quick
+
 [![CircleCI](https://circleci.com/gh/acro5piano/resume/tree/master.svg?style=svg)](https://circleci.com/gh/acro5piano/resume/tree/master)
 
 # Resume
