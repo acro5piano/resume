@@ -14,7 +14,7 @@
     "screenshot:png-ja": "yarn run chrome --screenshot=dist/resume-kaz_gosho.ja.png ./dist/index.ja.html",
     "chrome": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome  --headless --disable-gpu --page-ranges=1 --window-size=900,1200",
     "clean": "rimraf dist && mkdir dist && touch dist/.gitkeep",
-    "format": "prettier --write src/**/*.{ts,tsx,css} README.md"
+    "format": "prettier --write src/**/*.{js,css} README.md"
   },
   "keywords": [
     "resume",

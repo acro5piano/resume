@@ -4,5 +4,5 @@ module.exports = {
   accent: 'hsl(152, 84%, 60%)',
   normal: '12px',
   large: '14px',
-  xlarge: '17px'
+  xlarge: '17px',
 }
