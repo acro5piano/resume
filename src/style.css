@@ -1,0 +1,10 @@
+body {
+  background: #eee;
+  @media print {
+    background: #fff;
+  }
+}
+
+.resume-container {
+  width: 800px;
+}
