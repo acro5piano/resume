@@ -1,61 +1,50 @@
+const path = require('path')
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
-  context: __dirname + '/src',
+  mode: isProduction ? 'production' : 'development',
 
   entry: {
-    javascript: './app.js',
+    javascript: path.resolve(__dirname, 'src/app.js'),
   },
 
   output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js',
+    path: path.resolve(__dirname + '/dist'),
+    filename: isProduction ? 'bundle.[hash].js' : 'bundle.js',
   },
 
   devServer: {
     contentBase: 'dist',
     port: 3000,
     hot: true,
-  },
-
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.js',
-    },
+    open: true,
   },
 
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
         loader: 'babel-loader',
       },
       {
         test: /\.pug$/,
-        exclude: /node_modules/,
         loader: 'pug-loader',
       },
       {
         test: /\.jpg$/,
-        exclude: /node_modules/,
         loader: 'file-loader',
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
         use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            },
-          },
+          'style-loader',
+          'css-loader',
           {
             loader: 'postcss-loader',
+            options: { plugins: [require('./postcss.config')] },
           },
         ],
       },
@@ -63,12 +52,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.pug',
+      template: path.resolve(__dirname, 'src/index.pug'),
       filename: 'index.html',
       inject: true,
     }),
     new HtmlWebpackPlugin({
-      template: './index.ja.pug',
+      template: path.resolve(__dirname, 'src/index.ja.pug'),
       filename: 'index.ja.html',
       inject: true,
     }),
