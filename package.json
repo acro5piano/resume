@@ -30,7 +30,7 @@
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "cross-env": "^7.0.3",
-    "css-loader": "^0.28.4",
+    "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.2",
     "npm-run-all": "^4.1.3",
