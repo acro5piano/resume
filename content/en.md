@@ -10,7 +10,7 @@ description: >
 contact:
   languages: Japanese, English
   languagesLabel: Languages
-  phone: "+8180-7808-4235"
+  phone: '+8180-7808-4235'
   phoneLabel: Phone Number
   email: ketsume0211@gmail.com
   emailLabel: Email
@@ -21,6 +21,7 @@ contact:
 ## Work Experience
 
 ### Self Employed
+
 **2018.04 ~ Current**
 
 President
@@ -34,6 +35,7 @@ I solve various kinds of technical problems as an independent consultant.
 - Consult business strategy for startups
 
 ### Traimmu.inc
+
 **2017.03 ~ 2018.04**
 
 Lead Engineer
@@ -52,6 +54,7 @@ I've decreased the application's TTFB by 2000ms.
 - SQL tuning
 
 ### Quick CO., LTD.
+
 **2015.04 ~ 2017.02**
 
 Sales (2015.04 ~ 09), Engineer (2015.10 ~ 2017.02)
@@ -68,6 +71,7 @@ Then I moved to the engineering department, where I conducted maintenance on int
 ## Education
 
 ### Hitotsubashi University
+
 **2011.04 ~ 2015.03**
 
 Bachelor's Degree in Mathematics
