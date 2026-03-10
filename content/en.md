@@ -80,8 +80,6 @@ Bachelor's Degree in Mathematics
 - Linear Algebra, Calculus
 - Statistics
 
----
-
 ## OSS Contributions
 
 - **typed-graphqlify** https://github.com/acro5piano/typed-graphqlify
@@ -92,8 +90,6 @@ Bachelor's Degree in Mathematics
   - 29points in Hacker News https://news.ycombinator.com/item?id=18929040
 - **Fastlane** https://github.com/fastlane/fastlane
   - Fix a bug in #13526
-
----
 
 ## Development Skills
 
@@ -106,8 +102,6 @@ Bachelor's Degree in Mathematics
 - AWS, CircleCI (2 years)
 - Docker (2 years)
 - SQL (2 years)
-
----
 
 ## Profile Links
 

@@ -114,7 +114,9 @@ a {
   column-gap: 30px;
 
   & > hr {
-    display: none;
+    border: none;
+    margin: 0;
+    break-before: column;
   }
 
   & h2 {
