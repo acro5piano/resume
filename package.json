@@ -12,7 +12,7 @@
   "author": "Kazuya Gosho ketsume0211@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "js-yaml": "^4.1.1",
+    "gray-matter": "^4.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.3"
@@ -23,7 +23,6 @@
     ]
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.9",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react-swc": "^4.2.3",

@@ -11,7 +11,7 @@ interface ContactInfo {
   locationLabel: string
 }
 
-interface ResumeProps {
+export interface ResumeProps {
   frontmatter: {
     name: string
     subtitle: string
