@@ -4,7 +4,7 @@
 
 Bilingual resume of Kazuya Gosho, built with Vite + React + TypeScript.
 
-![screenshot](https://github.com/acro5piano/resume/blob/master/screenshot.png)
+![screenshot](https://github.com/acro5piano/resume/blob/main/screenshot.png)
 
 Why I created this repository: https://dev.to/acro5piano/5-reasons-why-git-based-resume-is-awesome-127
 
