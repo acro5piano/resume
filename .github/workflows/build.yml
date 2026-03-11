@@ -5,19 +5,18 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10, 12, 14, 15]
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: ${{ matrix.node-version }}
-      - uses: actions/cache@master
+          version: 10
+      - uses: actions/setup-node@v4
         with:
-          path: |
-            node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+          node-version: 24
+          cache: 'pnpm'
       - run: |
-          yarn install
-          yarn build:html
+          pnpm install
+          pnpm tsc
+          pnpm build

@@ -1,0 +1,176 @@
+:root {
+  --info: #40cec0;
+  --accent: hsl(152, 84%, 60%);
+  --normal: 12px;
+  --large: 14px;
+  --xlarge: 17px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Khula', Arial, sans-serif;
+  background: #eee;
+  font-size: var(--normal);
+  line-height: 1.5;
+  color: #333;
+
+  @media print {
+    background: #fff;
+  }
+}
+
+a {
+  color: var(--info);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.resume-container {
+  background: #fff;
+  width: 800px;
+  margin: 20px auto;
+
+  @media print {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Eyecatch / Header */
+.eyecatch {
+  padding: 16px 20px;
+}
+
+.eyecatch-title {
+  color: #555;
+  font-size: 30px;
+  margin: 12px 0 0 0;
+  font-weight: 400;
+}
+
+.eyecatch-subtitle {
+  color: var(--info);
+  font-size: var(--xlarge);
+  margin: 4px 0;
+}
+
+.eyecatch-description {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Contact Bar */
+.contact {
+  background: var(--info);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.contact-item-border {
+  border-right: solid 1px #888;
+}
+
+.contact-item-email {
+  flex: 1.4;
+}
+
+.contact-content {
+  font-size: var(--large);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.contact-heading {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+/* Content / Markdown */
+.content {
+  padding: 16px 20px;
+  columns: 2;
+  column-gap: 30px;
+
+  & > hr {
+    border: none;
+    margin: 0;
+    break-before: column;
+  }
+
+  & h2 {
+    font-size: var(--xlarge);
+    color: var(--info);
+    letter-spacing: 0.3px;
+    margin: 16px 0 8px 0;
+    break-after: avoid;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  & h3 {
+    font-weight: bold;
+    font-size: var(--normal);
+    margin: 12px 0 2px 0;
+    break-after: avoid;
+  }
+
+  & p {
+    margin: 2px 0;
+
+    & strong {
+      font-weight: normal;
+      color: #888;
+      margin-left: 0;
+    }
+  }
+
+  & ul {
+    margin: 4px 0 8px 0;
+    padding-left: 1.2em;
+    list-style: disc;
+
+    & li {
+      margin-bottom: 1px;
+    }
+  }
+
+  & a {
+    word-break: break-all;
+  }
+}
+
+/* Print Styles */
+@media print {
+  @page {
+    size: auto;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+}
