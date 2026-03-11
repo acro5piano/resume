@@ -1,12 +1,10 @@
 ---
 name: Kay Gosho
-subtitle: Full Stack Web Engineer
+subtitle: Full Stack Web Engineer / CTO
 description: >
-  Efficient and skilled in web application creation with a diverse knowledge of web technologies.
-  I have been a web engineer for 6 years
-  and garnered a multitude of experiences in the field of Server-side and Front-end programming, Front-end building,
-  GraphQL, TypeScript, Testing, SQL tuning and others.
-  I am also familiar with Infrastructure & DevOps tools such as AWS, CircleCI and Docker.
+  Full-stack web engineer with expertise spanning frontend, backend, and infrastructure.
+  Experienced CTO who co-founded a logistics tech startup and achieved profitability.
+  Skilled in TypeScript, React, Node.js, AWS, and building scalable enterprise applications.
 contact:
   languages: Japanese, English
   languagesLabel: Languages
@@ -20,51 +18,52 @@ contact:
 
 ## Work Experience
 
+### MonCargo, Inc.
+
+**2022.03 ~ Current**
+
+CTO / Co-founder
+
+A logistics DX startup that monitors container ship ETAs and notifies customers of schedule changes. Co-founded the company as CTO and achieved profitability. https://moncargo.io
+
+- Enterprise development (security audits, IP restrictions, customer support)
+- Product improvement through direct customer engagement and user interviews
+- Scalable architecture design and implementation
+
+### Remotehour, Inc.
+
+**2020.06 ~ 2021.06**
+
+CTO
+
+San Francisco-based startup backed by Launch Accelerator. Built an instant video calling service. Responsible for frontend, backend, and infrastructure.
+
+- Built real-time communication platform using WebRTC
+- Conducted US-based user interviews for product improvement
+- Troubleshooting and stability improvements
+
 ### Self Employed
 
 **2018.04 ~ Current**
 
-President
+Independent Consultant
 
-I solve various kinds of technical problems as an independent consultant.
+- AWS management (EC2, RDS, ECS, Lambda, CloudFront, etc.)
+- Infrastructure as Code support (Terraform, Ansible)
+- React / React Native application development with TypeScript
+- Technical and business strategy consulting for startups
 
-- AWS management (EC2, RDS, ElastiCache, ECS, Lambda, CloudFront, CloudWatch, etc.)
-- React + Almin
-- Improve React Native app working flow using Fastlane
-- Create React Native tutorial for Programming education company
-- Consult business strategy for startups
-
-### Traimmu.inc
+### Traimmu, Inc.
 
 **2017.03 ~ 2018.04**
 
-Lead Engineer
-
-I worked on broadening the scale of our web application (https://www.in-fra.jp).
-When I first joined the company, the application was a little outdated in both infrastructure and code,
-so our major task is refactoring the program.
-I've decreased the application's TTFB by 2000ms.
-
-- Refactor Laravel source code
-- Create iOS App with React Native
-- Change the infrastructure from Heroku to AWS EC2
-- Improve deployment process using Ansible on CircleCI
-- Implement easy setup development environment Docker
-- Visualize business KPI with Metabase
-- SQL tuning
+Lead Engineer. Scaled web application (in-fra.jp). Decreased TTFB by 2000ms. Introduced Vue.js, built iOS app with React Native. Set up AWS, CI/CD, Docker, Ansible, and Metabase.
 
 ### Quick CO., LTD.
 
 **2015.04 ~ 2017.02**
 
-Sales (2015.04 ~ 09), Engineer (2015.10 ~ 2017.02)
-
-I worked in sales first half a year.
-In the sales department, I made appointments with new customers, and secured contracts with them.
-Then I moved to the engineering department, where I conducted maintenance on internal systems.
-
-- Sale of Human Resource solutions
-- Fix bugs and prevent system degradation
+Sales → Engineer. Started in HR sales, then moved to internal systems development. Learn basic PHP skills and human management.
 
 ---
 
@@ -76,37 +75,29 @@ Then I moved to the engineering department, where I conducted maintenance on int
 
 Bachelor's Degree in Mathematics
 
-- Programming
-- Linear Algebra, Calculus
-- Statistics
+## Development Skills
+
+- TypeScript, JavaScript (8+ years)
+- React, React Native (6+ years)
+- Node.js (8+ years)
+- PHP, Laravel (5+ years)
+- AWS, Docker, CI/CD (7+ years)
+- GraphQL, SQL (5+ years)
+- WebRTC
+- Linux
 
 ## OSS Contributions
 
-- **typed-graphqlify** https://github.com/acro5piano/typed-graphqlify
-  - Gained 347 stars
-  - Create new concept, TypeScript -> GraphQL tool
-- **docker-run.com** https://github.com/acro5piano/docker-run.com
-  - Gained 50 stars
-  - 29points in Hacker News https://news.ycombinator.com/item?id=18929040
-- **Fastlane** https://github.com/fastlane/fastlane
-  - Fix a bug in #13526
-
-## Development Skills
-
-- Node.js (5 years)
-- PHP (4 years)
-- TypeScript (3 years)
-- React, React Native (3 years)
-- GraphQL (2 years)
-- Laravel (2 years)
-- AWS, CircleCI (2 years)
-- Docker (2 years)
-- SQL (2 years)
+- **react-native-big-calendar** — Cross-platform calendar component (579+ stars)
+- **typed-graphqlify** — TypeScript→GraphQL tool (347+ stars)
+- **kysely-migration-cli** — Migration CLI for Kysely (76+ stars)
+- **fastlane**, **fzf**, **aider** — Bug fixes and feature additions
 
 ## Profile Links
 
 - https://github.com/acro5piano
 - https://www.linkedin.com/in/kay-gosho-587a05121
-- https://acro5piano.github.io
 - https://dev.to/acro5piano
-- https://qiita.com/acro5piano (Japanese website)
+- https://x.com/acro5piano
+- https://zenn.dev/acro5piano
+- https://acro5piano.com
